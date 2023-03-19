@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    height: 600;
+}
+
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-segundario {
+    display: none;
+    height: 100%;
+    background-position: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 64px;
+    margin-top: 16px;
+}
+
+.titulo-principal {
+    font-size: 56px;
+}
+
+.botao {
+    padding: 20px 60px;
+    border-radius: 40px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.certo {
+    background: #35a235;
+    text-decoration: none;
+}
+
+.errado {
+    background: #cb3a3a;
+}
+
+.titulo-pagina__dois {
+    margin: 0;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background: url("https://static.significados.com.br/foto/5839-pf-48-630x552_sm.jpg") repeat;
+}
+
+.titulo-segundario {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.voltar {
+    background: black;
+    color: white;
+    border: 1px solid black;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .titulo-principal {
+        font-size: 32px;
+    }
+
+
+    .botao{
+        font-size: 26px;
+        padding: 10px 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0 16px;
+    }
+
+    .container-segundario {
+        background: url("https://static.significados.com.br/foto/5839-pf-48-630x552_sm.jpg") repeat-y;
+        background-position: center;
+    }
+
+    .titulo-pagina__dois {
+        background: none;
+    }
+
+}
